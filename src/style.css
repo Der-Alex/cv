@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-dark-text: #a398ff;
+  --color-dark-primary: #240750;
+  --color-dark-primary-dark: #0f061d;
+  --color-dot: #b7cad1;
+  --color-dot-dark: #3b3261;
+}
+
+@utility ga-content {
+  grid-area: content;
+}
+@utility ga-content2 {
+  grid-area: content2;
+}
+@utility ga-content3 {
+  grid-area: content3;
+}
+@utility ga-content4 {
+  grid-area: content4;
+}
+@utility ga-content5 {
+  grid-area: content5;
+}
+@utility ga-content6 {
+  grid-area: content6;
+}
+@utility ga-content7 {
+  grid-area: content7;
+}
+@utility ga-sidebar {
+  grid-area: sidebar;
+}
+@utility ga-sidebar2 {
+  grid-area: sidebar2;
+}
+@utility ga-sidebar3 {
+  grid-area: sidebar3;
+}
+@utility ga-sidebar4 {
+  grid-area: sidebar4;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply transition-all;
+
+    &::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      background: linear-gradient(
+        125deg,
+        var(--color-dark-primary),
+        var(--color-dark-primary-dark) 30%
+      );
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      opacity: 0;
+      transition: all 70ms ease-in;
+    }
+  }
+
+  body:has(.dark)::before {
+    opacity: 1;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.2rem) * 3.5714)), 2.5rem);
+    @media (width >= 640px) {
+      font-size: clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 2.0833)), 2.5rem);
+    }
+    @apply font-black dark:text-dark-text;
+  }
+  h2 {
+    @apply font-black text-cyan-900 text-xl dark:text-dark-text;
+  }
+  h3 {
+    @apply font-semibold;
+  }
+}

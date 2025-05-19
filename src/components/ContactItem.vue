@@ -28,13 +28,13 @@ const typeText = computed(() => {
 </script>
 <template>
   <div
-    class="contact-item flex items-center justify-start gap-2 py-2 sm:gap-4 transition-all text-balance"
+    class="contact-item flex items-center justify-start gap-2 py-2 sm:gap-4 text-balance"
   >
     <Icon
       :icon="icon"
-      class="w-6 h-6 sm:w-8 sm:h-8 text-cyan-900 dark:text-dark-text"
+      class="w-6 h-6 sm:w-8 sm:h-8 text-cyan-900 dark:text-dark-text transition-[width,height]"
     />
-    <div class="text text-sm sm:text-base">
+    <div class="text text-sm sm:text-base transition-[font-size]">
       <template
         v-for="textPart in text"
         :key="textPart"
@@ -44,7 +44,7 @@ const typeText = computed(() => {
         </p>
         <p v-else>
           <a
-            class="hover:underline hover:text-cyan-900 dark:hover:text-dark-text transition-all"
+            class="hover:underline hover:text-cyan-900 dark:hover:text-dark-text"
             :href="`${typeText}${textPart}`"
             >{{ textPart }}</a
           >

@@ -63,7 +63,7 @@ if (window && window.matchMedia('(prefers-color-scheme: dark)')) {
     />
     <div class="sm:ga-sidebar4 bg-[#e7f2f4] dark:bg-dark-primary/30 z-10"></div>
     <DarkModeToggle
-      class="print:hidden fixed cursor-pointer right-4 top-4 rounded-full w-12 h-12 flex items-center justify-center bg-cyan-900 text-dot dark:bg-dark-text dark:text-dark-primary-dark transition-all print:transition-none z-20"
+      class="print:hidden absolute cursor-pointer left-4 top-4 rounded-full w-12 h-12 flex items-center justify-center bg-cyan-900 text-dot dark:bg-dark-text dark:text-dark-primary-dark transition-all print:transition-none z-20"
       @click="toggleDarkMode"
     />
 
@@ -84,7 +84,7 @@ if (window && window.matchMedia('(prefers-color-scheme: dark)')) {
     'content6'
     'content7';
 
-  @media (width >= 40rem) {
+  @media (width >= 41.25rem) {
     grid-template-areas:
       'sidebar content'
       'sidebar2 content2'

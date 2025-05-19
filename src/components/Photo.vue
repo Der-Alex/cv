@@ -3,7 +3,7 @@
     <picture class="block picture p-8 sm:p-0">
       <source
         srcset="/alex-648.webp"
-        media="(min-width: 640px)"
+        media="(width >= 660px)"
       />
       <img
         class="mx-auto w-xs h-xs sm:w-auto sm:min-w-xs sm:max-h-[648px] sm:aspect-[6/9]"

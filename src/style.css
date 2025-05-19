@@ -6,6 +6,7 @@
   --color-dark-primary-dark: #0f061d;
   --color-dot: #b7cad1;
   --color-dot-dark: #3b3261;
+  --breakpoint-sm: 41.25rem;
 }
 
 @utility ga-content {

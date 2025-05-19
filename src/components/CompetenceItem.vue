@@ -30,12 +30,12 @@ const valueText = computed(() => {
     <div class="competence-icon flex flex-col items-center w-16">
       <Icon
         :icon="icon"
-        class="w-6 h-6 sm:w-8 sm:h-8 transition-all"
+        class="w-6 h-6 sm:w-8 sm:h-8 transition-[width,height]"
       />
       <span class="text-xs">{{ name }}</span>
     </div>
     <strong
-      class="competence-value font-medium text-xs sm:text-base place-content-center"
+      class="competence-value font-medium text-xs sm:text-base place-content-center transition-[font-size]"
       >{{ valueText }}</strong
     >
   </li>

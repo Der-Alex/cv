@@ -22,27 +22,27 @@ const contact = ref({
       :text="contact.text"
       :type="contact.type"
     />
-    <p class="text-sm sm:text-base">
+    <p class="text-sm sm:text-base transition-[font-size]">
       Seit 2007 arbeite ich als Webentwickler mit dem Schwerpunkt
       Frontend-Entwicklung. Neben der Planung, Organisation, Entwicklung und
       Pflege moderner Webanwendungen beschäftige ich mich auch gelegentlich im
       Fullstack-Bereich oder mit DevOps-Aufgaben.
     </p>
-    <p class="text-sm sm:text-base">
+    <p class="text-sm sm:text-base transition-[font-size]">
       Hauptsächlich bin ich für die Planung der Frontend-Architektur und die
       Umsetzung moderner Web-Designs verantwortlich. Mein Fokus liegt stets auf
       gut wartbarem Code, einer sehr guten Usability und
       Performance-Optimierung.
     </p>
 
-    <p class="text-sm sm:text-base">
+    <p class="text-sm sm:text-base transition-[font-size]">
       Neben meiner fachlichen Expertise zeichne ich mich durch strukturierte
       Arbeitsweise und meine Teamfähigkeit aus. Die Arbeit mit
       interdisziplinären Teams unterstütze ich gerne mit meiner Erfahrung und
       meinem Verständnis für übergreifende Prozesse.
     </p>
 
-    <p class="text-sm sm:text-base">
+    <p class="text-sm sm:text-base transition-[font-size]">
       In meiner Freizeit unternehme ich gerne Ausflüge mit der Familie, jogge
       viel und spiele leidenschaftlich gern Videospiele.
     </p>

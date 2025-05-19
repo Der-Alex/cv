@@ -86,3 +86,16 @@
     @apply font-semibold;
   }
 }
+
+.print-extra {
+  @media print {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 432px;
+    background: red;
+    z-index: 1;
+  }
+}

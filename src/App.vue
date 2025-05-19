@@ -15,6 +15,10 @@ const toggleDarkMode = () => {
     ? (darkMode.value = '')
     : (darkMode.value = 'dark');
 };
+
+if (window && window.matchMedia('(prefers-color-scheme: dark)')) {
+  toggleDarkMode();
+}
 </script>
 
 <template>
